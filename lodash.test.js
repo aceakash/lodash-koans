@@ -1,3 +1,7 @@
+/******************************************************************************/
+/* IMPORTANT: Replace *only* the bits that say _.identity(input) in the tests */
+/******************************************************************************/
+
 require("must/register");
 const _ = require('lodash');
 
