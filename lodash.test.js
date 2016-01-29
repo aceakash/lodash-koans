@@ -3,34 +3,34 @@
 /******************************************************************************/
 
 require("must/register");
-const _ = require('lodash');
+var _ = require('lodash');
 
-describe('Easy', () => {
+describe('Easy', function () {
   it('#1', () => {
-    const input     = [1, 5, 6, 9, 8, 6, 2];
-    const expected  = [1, 5];
-    const actual = _.identity(input);
+    var input     = [1, 5, 6, 9, 8, 6, 2];
+    var expected  = [1, 5];
+    var actual = _.identity(input);
     actual.must.eql(expected);
   });
 
-  it('#2', () => {
-    const input     = [1, 5, 6, 9, 8, 6, 2];
-    const expected  = [8, 6, 2];
-    const actual = _.identity(input);
+  it('#2', function () {
+    var input     = [1, 5, 6, 9, 8, 6, 2];
+    var expected  = [8, 6, 2];
+    var actual = _.identity(input);
     actual.must.eql(expected);
   });
 
-  it('#3', () => {
-    const input     = [1, 5, 6, 9, 8, 6, 2];
-    const expected  = [5, 6, 9, 8, 6, 2];
-    const actual = _.identity(input);
+  it('#3', function () {
+    var input     = [1, 5, 6, 9, 8, 6, 2];
+    var expected  = [5, 6, 9, 8, 6, 2];
+    var actual = _.identity(input);
     actual.must.eql(expected);
   });
 
-  it('#4', () => {
-    const input     = [1, 5, 6, 9, 8, 6, 2];
-    const expected  = [1, 5, 6, 9, 8, 6];
-    const actual = _.identity(input);
+  it('#4', function () {
+    var input     = [1, 5, 6, 9, 8, 6, 2];
+    var expected  = [1, 5, 6, 9, 8, 6];
+    var actual = _.identity(input);
     actual.must.eql(expected);
   });
 });
