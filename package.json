@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "mocha --require babel-core/register *.test.js"
+    "start": "./node_modules/mocha/bin/mocha --require babel-core/register *.test.js"
   },
   "author": "",
   "license": "ISC",
