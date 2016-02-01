@@ -130,6 +130,36 @@ describe('Easy - needs a single lodash function, with optional scalar arguments'
     var actual = _.identity(input);   // <----- Edit this line
     actual.must.eql(expected);
   });
+
+  it('#18', function () {
+    var input1 = [1, 5, 7, 9, 5, 8, 3];
+    var input2 = 5;
+    var expected = 4;
+    var actual = _.identity(input1);   // <----- Edit this line
+    actual.must.eql(expected);
+  });
+
+  it('#19', function () {
+    var input = ['jackson', 'twain', 'bieber'];
+    var expected = ['bieber', 'twain', 'jackson'];
+    var actual = _.identity(input);   // <----- Edit this line
+    actual.must.eql(expected);
+  });
+
+  it('#20', function () {
+    var input1 = [1, 3, 5, 7, 9, 11];
+    var input2 = 8; // where would this fit in the ordered array above?
+    var expected = 4;
+    var actual = _.identity(input1);   // <----- Edit this line
+    actual.must.eql(expected);
+  });
+
+  it('#21', function () {
+    var input = ['Mr', 'Samuel', 'L', 'Jackson'];
+    var expected = ['Samuel', 'L', 'Jackson'];
+    var actual = _.identity(input);   // <----- Edit this line
+    actual.must.eql(expected);
+  });
 });
 
 
