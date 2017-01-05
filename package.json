@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/mocha/bin/mocha *.test.js"
+    "all": "./node_modules/mocha/bin/mocha --reporter dot *.test.js",
+    "next": "./node_modules/mocha/bin/mocha --reporter dot -b *.test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.0.1",
-    "mocha": "^2.4.5",
+    "mocha": "^3.2.0",
     "must": "^0.13.1"
   }
 }

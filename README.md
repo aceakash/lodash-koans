@@ -4,10 +4,17 @@ Koans to get more familiar with [lodash](https://lodash.com)
 # Usage
 ```
 npm install
-npm start
+
+## Show the next failing test
+npm run next
+
+## Show all failing tests
+npm run all
 ```
 
-This will give you failing tests. Fire up your JS editor/IDE of choice, and in each test in **lodash.test.js**, replace identity in `_.identity(input)` with the lodash function that would do the transform in the test. Of course, you might need to pass in additional parameters to the function.
+This will give you failing tests. 
+
+Fire up your JS editor/IDE of choice, and in each test in **lodash.test.js**, replace identity in `_.identity(input)` with the lodash function that would do the transform in the test. Of course, you might need to pass in additional parameters to the function.
 
 e.g.
 
@@ -28,4 +35,4 @@ After having cleverly identified that this requires [take](https://lodash.com/do
 const actual = _.take(input, 2);
 ```
 
-Run `npm start` again, and this test should have passed.
+Run `npm run next` again, and this test should have passed.
