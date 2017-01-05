@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "all": "./node_modules/mocha/bin/mocha --reporter dot *.test.js",
-    "next": "./node_modules/mocha/bin/mocha --reporter dot -b *.test.js"
+    "next": "./node_modules/mocha/bin/mocha -b *.test.js"
   },
   "author": "",
   "license": "ISC",
